@@ -6,7 +6,7 @@
 #![deny(warnings)]
 #![feature(raw)]
 #![feature(plugin)]
-#![feature(simd)]
+#![feature(repr_simd)]
 
 #[cfg(test)] extern crate test as stdtest;
 #[cfg(test)] extern crate approx;
@@ -27,12 +27,12 @@ pub mod traits;
 
 #[allow(missing_docs, non_camel_case_types)]
 #[derive(Clone, Copy, Debug)]
-#[simd]
+#[repr(simd)]
 pub struct f32x4(pub f32, pub f32, pub f32, pub f32);
 
 #[allow(missing_docs, non_camel_case_types)]
 #[derive(Clone, Copy, Debug)]
-#[simd]
+#[repr(simd)]
 pub struct f64x2(pub f64, pub f64);
 
 /// Sum the elements of a slice using SIMD ops
