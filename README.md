@@ -1,3 +1,18 @@
+# Status
+
+This project is **UNMAINTAINED** and won't receive further updates or bug fixes.
+
+For the record, I was using this crate to provide SIMD acceleration to the stats.rs crate. But later
+that got removed because SIMD is not usable in the stable channel.
+
+Not really a replacement, but you may be interested in the [simd] crate on crates.io.
+
+[simd]: https://crates.io/crates/simd
+
+-- @japaric, 2016-05-02
+
+---
+
 [![Build Status][status]](https://travis-ci.org/japaric/simd.rs)
 
 # `simd.rs`
